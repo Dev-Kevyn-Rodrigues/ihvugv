@@ -1,0 +1,49 @@
+* {
+  margin: 0px;
+}
+
+.container {
+  background-color: darkcyan;
+  padding: 20px;
+  display: grid; /* define meu container como grid e itens de grid */
+  grid-template-columns: 1fr 1fr 1fr; /* define a quantidade de colunas e largura */
+  grid-template-rows: auto; /* define a quantidade de linhas e altura das linhas */
+  column-gap: 50px; /* define o espaçamento entre as colunas */
+  row-gap: 100px; /* define o espaçamento entre as linhas */
+  gap: 20px; /* abreviação do column-gap e row-gap */
+}
+
+.item {
+  background-color: white;
+  color: black;
+  padding: 10px;
+}
+
+#item1 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+#item2 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+
+#item3 {
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+
+#item4 {
+  grid-column-start: 1;
+  grid-column-end: 4
+}
+
+#item5 {
+  grid-row: 1; 
+  grid-column: 3; 
+  grid-row-start: 1; 
+  grid-row-end: 4; 
+  grid-column-start: 3; 
+  grid-column-end: 4; 
+}

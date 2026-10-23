@@ -1,0 +1,23 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+  background-color: hotpink;
+  color: aqua;
+  text-align: center;
+  padding: 20px;
+}
+.card{
+  background-color: black;
+  padding: 20px;
+  width: 700px;
+  border-radius: 10px;
+}
+.tcard, .pcard{
+  margin-botton: 20px;
+}
+.bcard{
+  text-decoration: none;
+}

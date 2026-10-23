@@ -1,0 +1,92 @@
+body{
+  margin: 0px;
+  padding: 20px;
+}
+
+.botao{
+  text-decoration: none;
+  color: black;
+  padding: 15px 30px;
+  border-radius: 5px;
+  background: linear-gradient(45deg, #ffa500, #ff5f1f);
+}
+
+.botao:hover{
+  background: #ff0fff;
+  transition: 0.3s;
+}
+
+.botao:active{
+  background: green;
+  transition: 1s;
+}
+
+.titulo{
+position: relative;
+}
+
+.titulo::before{
+  content: "";
+  width: 50px;
+  height: 5px;
+  background-color: darkcyan;
+  position: absolute;
+  top: 35px;
+  animation: mudarCor 3s backwards;
+}
+
+@keyframes mudarCor{
+
+  0%{
+   width: 0px;
+   height: 0px;
+   background-color: darkcyan;
+  }
+
+  25%{
+    width: 50px;
+    height: 10px;
+    background-color: darkgreen;
+  }
+
+  50%{
+    width: 50px;
+    height: 20px;
+    background-color: darkgoldenrod;
+  }
+
+  75%{
+    width: 50px;
+    height: 30px;
+    background-color: darkolivegreen;
+  }
+
+  100%{
+    width: 50%;
+    height: 40%;
+    background-color: darkcyan;
+  }
+}
+
+.caixa{
+  background-color: darkcyan;
+  height: 200px;
+  width: 200px;
+  position: relative;
+  animation: mudarForma backwards;
+}
+
+body{
+  clip-path: polygon(
+    50% 0%
+    61% 35%
+    98% 35%
+    68% 57%
+    79% 91%
+    50% 70%
+    21% 91%
+    32% 57%
+    2% 35%
+    39% 35%
+  );
+}

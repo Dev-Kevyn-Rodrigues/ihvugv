@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Estilização do Header */
+.navbar {
+    display: flex;
+    justify-content: space-between; /* Distribui os itens: esquerda, centro, direita */
+    align-items: center;            /* Alinha verticalmente ao centro */
+    padding: 15px 30px;
+    background-color: #ffffff;      /* Fundo branco */
+    border-bottom: 1px solid #eaeaea; /* Linha sutil embaixo */
+}
+
+/* Garante que as três seções ocupem o mesmo espaço proporcional para centralizar a logo perfeitamente */
+.nav-left, .nav-center, .nav-right {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+/* Alinhamentos específicos */
+.nav-left {
+    gap: 20px; /* Espaço entre os links do menu */
+    justify-content: flex-start;
+}
+
+.nav-center {
+    justify-content: center;
+}
+
+.nav-right {
+    justify-content: flex-end;
+    gap: 20px; /* Espaço entre os ícones */
+}
+
+/* Estilo dos links e textos */
+.navbar a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 13px;
+    letter-spacing: 1px;
+    transition: opacity 0.2s;
+}
+
+.navbar a:hover {
+    opacity: 0.6; /* Efeito suave ao passar o mouse */
+}
+
+/* Estilo específico da Logo */
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 6px; /* Letras espaçadas estilo minimalista */
+}
+
+/* Estilo dos ícones do lado direito */
+.nav-right i {
+    font-size: 16px;
+}

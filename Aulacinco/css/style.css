@@ -1,0 +1,21 @@
+.container {
+  background-color: darkcyan;
+  padding: 20px;
+  display: flex; /* cria meu container flexivel */
+  flex-direction: row; /* Define a direção do flex */
+  flex-wrap: wrap; /* responsavel pela quebra dos elementos quando nao cabe na mesma linha */
+  flex-flow: row wrap; /* abreviação de flex-wrap e flex-direction */
+  justify-content: left; /* responsavel por posicionar os itens flexiveis no eixo X quando há espaço no container */
+}
+
+h2 {
+  margin: 0px;
+}
+
+.itens {
+  width: 100px;
+  height: 100px;
+  background-color: white;
+  text-align: center;
+  margin: 10px;
+}

@@ -1,0 +1,13 @@
+h1{
+  font-family: Arial, Helvetica, sans-serif; /*Altera a fonte*/
+  font-size: 50px;
+  font-weight: 100;
+  color: yellowgreen;
+  background-color: blueviolet;
+  text-align: left;
+  margin: 100px 50px 300px;
+}
+a{
+ color: black;
+ text-decoration: nome;
+}
